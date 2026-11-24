@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Global Ledger — 24 November 2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1024px; height: 1024px; }
+  body {
+    font-family: "Noto Serif", "DejaVu Serif", Georgia, serif;
+    background: #f8f3e7;
+    color: #191919;
+    padding: 20px 28px 16px 28px;
+    overflow: hidden;
+  }
+  .sans { font-family: "Noto Sans", "DejaVu Sans", Arial, sans-serif; }
+
+  /* Masthead */
+  .masthead { text-align: center; }
+  .masthead .name {
+    font-size: 60px; font-weight: 900; letter-spacing: 5px; line-height: 1.02;
+  }
+  .masthead .name .red { color: #9c1a1a; }
+  .masthead .tagline {
+    font-family: "Noto Sans", "DejaVu Sans", Arial, sans-serif;
+    font-size: 13px; letter-spacing: 4px; color: #5a5a5a; margin-top: 4px;
+  }
+  .dateline {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-family: "Noto Sans", "DejaVu Sans", Arial, sans-serif;
+    font-size: 15px; font-weight: 700; letter-spacing: 1.6px;
+    border-top: 3px solid #191919; border-bottom: 1px solid #191919;
+    padding: 7px 2px; margin-top: 10px;
+  }
+  .dateline .mid { color: #9c1a1a; font-size: 22px; letter-spacing: 2.5px; }
+
+  /* Lead story */
+  .lead { display: flex; gap: 20px; margin-top: 14px; }
+  .lead-text { flex: 0 0 540px; }
+  .kicker {
+    font-family: "Noto Sans", "DejaVu Sans", Arial, sans-serif;
+    color: #9c1a1a; font-size: 14px; font-weight: 800; letter-spacing: 2.4px;
+  }
+  h1 { font-size: 41px; line-height: 1.1; margin-top: 7px; }
+  .lede { font-size: 16.5px; line-height: 1.5; margin-top: 11px; }
+  .lede b { color: #9c1a1a; }
+  .lead-art { flex: 1; }
+  .lead-art svg { display: block; width: 100%; height: 296px; }
+
+  .rule { border-top: 2px solid #191919; margin-top: 14px; }
+
+  /* Story grid */
+  .grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 13px 24px;
+    margin-top: 4px;
+  }
+  .story {
+    display: flex; gap: 13px; border-top: 1px solid #8f8a7c;
+    padding-top: 11px; min-height: 128px;
+  }
+  .story .art { flex: 0 0 96px; }
+  .story .art svg { display: block; width: 96px; height: 76px; }
+  .story .kick {
+    font-family: "Noto Sans", "DejaVu Sans", Arial, sans-serif;
+    color: #9c1a1a; font-size: 12.5px; font-weight: 800; letter-spacing: 2px;
+  }
+  .story h2 { font-size: 21px; line-height: 1.16; margin-top: 3px; }
+  .story p {
+    font-family: "Noto Sans", "DejaVu Sans", Arial, sans-serif;
+    font-size: 14.5px; line-height: 1.42; margin-top: 5px; color: #2b2b2b;
+  }
+
+  /* Sport strip */
+  .sport {
+    display: flex; gap: 13px; align-items: flex-start;
+    border-top: 2px solid #191919; margin-top: 14px; padding-top: 11px;
+  }
+  .sport .art { flex: 0 0 96px; }
+  .sport .art svg { display: block; width: 96px; height: 76px; }
+  .sport .kick {
+    font-family: "Noto Sans", "DejaVu Sans", Arial, sans-serif;
+    color: #9c1a1a; font-size: 12.5px; font-weight: 800; letter-spacing: 2px;
+  }
+  .sport h2 { font-size: 21px; line-height: 1.16; margin-top: 3px; display: inline; }
+  .sport p {
+    font-family: "Noto Sans", "DejaVu Sans", Arial, sans-serif;
+    font-size: 14.5px; line-height: 1.42; margin-top: 5px; color: #2b2b2b;
+  }
+
+  /* Footer */
+  .footer {
+    border-top: 3px solid #191919; margin-top: 14px; padding-top: 9px;
+    font-family: "Noto Sans", "DejaVu Sans", Arial, sans-serif;
+    font-size: 13.5px; line-height: 1.5; color: #2b2b2b;
+  }
+  .footer b { color: #9c1a1a; letter-spacing: 1.6px; }
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <div class="name">THE <span class="red">GLOBAL</span> LEDGER</div>
+  <div class="tagline">ONE DAY &middot; THE WHOLE WORLD &middot; IN ONE PICTURE</div>
+  <div class="dateline">
+    <span>WORLD EDITION</span>
+    <span class="mid">TUESDAY 24 NOVEMBER 2026</span>
+    <span>NO. 328</span>
+  </div>
+</div>
+
+<div class="lead">
+  <div class="lead-text">
+    <div class="kicker">RUSSIA&ndash;UKRAINE WAR &middot; KYIV REGION</div>
+    <h1>Strikes on Kyiv region kill at least 14</h1>
+    <p class="lede">Russian drone and missile attacks hit towns around
+    Ukraine&rsquo;s capital overnight, damaging a residential building in
+    Dymer and other homes. <b>Ukraine says at least 14 people were
+    killed</b> as rescue teams searched the rubble.</p>
+  </div>
+  <div class="lead-art">
+    <svg viewBox="0 0 400 296" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#2e3a4d"/>
+          <stop offset="0.62" stop-color="#7a6a58"/>
+          <stop offset="1" stop-color="#e07830"/>
+        </linearGradient>
+      </defs>
+      <rect x="0" y="0" width="400" height="296" fill="url(#sky)"/>
+      <circle cx="330" cy="52" r="26" fill="#f5d76e" opacity="0.9"/>
+      <!-- smoke plumes -->
+      <ellipse cx="110" cy="52" rx="34" ry="20" fill="#cfc8bd" opacity="0.85"/>
+      <ellipse cx="128" cy="30" rx="26" ry="15" fill="#ddd6ca" opacity="0.8"/>
+      <ellipse cx="255" cy="66" rx="30" ry="17" fill="#cfc8bd" opacity="0.85"/>
+      <ellipse cx="270" cy="46" rx="22" ry="13" fill="#ddd6ca" opacity="0.8"/>
+      <!-- skyline -->
+      <g fill="#232a35">
+        <rect x="0" y="150" width="52" height="146"/>
+        <rect x="56" y="120" width="46" height="176"/>
+        <rect x="106" y="168" width="58" height="128"/>
+        <rect x="168" y="104" width="52" height="192"/>
+        <rect x="224" y="150" width="48" height="146"/>
+        <rect x="276" y="126" width="56" height="170"/>
+        <rect x="336" y="160" width="64" height="136"/>
+      </g>
+      <!-- lit windows -->
+      <g fill="#f5c542">
+        <rect x="66" y="140" width="9" height="11"/><rect x="82" y="164" width="9" height="11"/>
+        <rect x="116" y="186" width="9" height="11"/><rect x="142" y="206" width="9" height="11"/>
+        <rect x="180" y="126" width="9" height="11"/><rect x="198" y="156" width="9" height="11"/>
+        <rect x="234" y="172" width="9" height="11"/><rect x="288" y="146" width="9" height="11"/>
+        <rect x="306" y="176" width="9" height="11"/><rect x="348" y="182" width="9" height="11"/>
+        <rect x="366" y="206" width="9" height="11"/><rect x="14" y="176" width="9" height="11"/>
+      </g>
+      <!-- fire glow at base -->
+      <ellipse cx="130" cy="292" rx="70" ry="12" fill="#e07830" opacity="0.85"/>
+      <ellipse cx="300" cy="292" rx="56" ry="10" fill="#e07830" opacity="0.7"/>
+      <rect x="0" y="290" width="400" height="6" fill="#191919"/>
+    </svg>
+  </div>
+</div>
+
+<div class="rule"></div>
+
+<div class="grid">
+  <div class="story">
+    <div class="art">
+      <svg viewBox="0 0 96 76" xmlns="http://www.w3.org/2000/svg">
+        <rect x="6" y="34" width="84" height="34" fill="#8a6d3b"/>
+        <path d="M6 34 L20 18 L34 34 L48 18 L62 34 L76 18 L90 34 Z" fill="#a8842f"/>
+        <rect x="14" y="46" width="12" height="12" fill="#f8f3e7"/>
+        <rect x="34" y="46" width="12" height="12" fill="#f8f3e7"/>
+        <rect x="54" y="46" width="12" height="12" fill="#f8f3e7"/>
+        <path d="M74 8 C80 16 82 20 78 26 C74 30 68 26 70 20 C71 16 72 12 74 8 Z" fill="#e07830"/>
+        <path d="M82 14 C86 20 87 23 84 27" fill="#e07830"/>
+        <rect x="0" y="68" width="96" height="4" fill="#191919"/>
+      </svg>
+    </div>
+    <div>
+      <div class="kick">INDONESIA &middot; DISASTER</div>
+      <h2>Factory fire kills 24 in Banten</h2>
+      <p>A blaze at a candy factory leaves at least 24 workers dead;
+      rescuers keep searching for the missing.</p>
+    </div>
+  </div>
+
+  <div class="story">
+    <div class="art">
+      <svg viewBox="0 0 96 76" xmlns="http://www.w3.org/2000/svg">
+        <rect x="28" y="18" width="40" height="40" rx="4" fill="#1f4e79"/>
+        <rect x="38" y="28" width="20" height="20" fill="#f8f3e7"/>
+        <circle cx="48" cy="38" r="5" fill="#1f4e79"/>
+        <g stroke="#1f4e79" stroke-width="4">
+          <line x1="32" y1="26" x2="18" y2="26"/><line x1="32" y1="38" x2="18" y2="38"/>
+          <line x1="32" y1="50" x2="18" y2="50"/><line x1="64" y1="26" x2="78" y2="26"/>
+          <line x1="64" y1="38" x2="78" y2="38"/><line x1="64" y1="50" x2="78" y2="50"/>
+        </g>
+        <path d="M20 66 L76 66" stroke="#9c1a1a" stroke-width="3"/>
+        <path d="M20 66 L34 56 L48 62 L62 48 L76 52" fill="none" stroke="#9c1a1a" stroke-width="3"/>
+      </svg>
+    </div>
+    <div>
+      <div class="kick">BUSINESS &middot; TECH</div>
+      <h2>Nvidia brings back Huang as chief</h2>
+      <p>After Trump intervenes, the board reinstates Jensen Huang as
+      chief executive; shares jump 33%.</p>
+    </div>
+  </div>
+
+  <div class="story">
+    <div class="art">
+      <svg viewBox="0 0 96 76" xmlns="http://www.w3.org/2000/svg">
+        <rect x="14" y="22" width="68" height="8" fill="#5a4632"/>
+        <path d="M14 22 L48 6 L82 22 Z" fill="#7a5c3e"/>
+        <rect x="20" y="30" width="7" height="26" fill="#8a6d3b"/>
+        <rect x="38" y="30" width="7" height="26" fill="#8a6d3b"/>
+        <rect x="56" y="30" width="7" height="26" fill="#8a6d3b"/>
+        <rect x="72" y="30" width="7" height="26" fill="#8a6d3b"/>
+        <rect x="14" y="56" width="68" height="6" fill="#5a4632"/>
+        <rect x="10" y="62" width="76" height="6" fill="#191919"/>
+      </svg>
+    </div>
+    <div>
+      <div class="kick">UNITED STATES &middot; LAW</div>
+      <h2>States sue Musk firms over Grok images</h2>
+      <p>US states sue the companies behind the Grok chatbot over
+      sexualised images it generated.</p>
+    </div>
+  </div>
+
+  <div class="story">
+    <div class="art">
+      <svg viewBox="0 0 96 76" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="48" cy="38" r="30" fill="#7fb069"/>
+        <ellipse cx="48" cy="38" rx="30" ry="12" fill="none" stroke="#f8f3e7" stroke-width="2"/>
+        <ellipse cx="48" cy="38" rx="12" ry="30" fill="none" stroke="#f8f3e7" stroke-width="2"/>
+        <path d="M22 30 C40 22 58 22 74 30" fill="none" stroke="#f8f3e7" stroke-width="2"/>
+        <path d="M22 48 C40 56 58 56 74 48" fill="none" stroke="#f8f3e7" stroke-width="2"/>
+        <path d="M66 8 C74 16 74 26 66 30 C58 26 58 16 66 8 Z" fill="#e07830"/>
+      </svg>
+    </div>
+    <div>
+      <div class="kick">CLIMATE &middot; COP31</div>
+      <h2>Climate talks split over fossil fuels</h2>
+      <p>At COP31 in Antalya, nations stay divided on cutting fossil
+      fuel use as warming pressures grow.</p>
+    </div>
+  </div>
+</div>
+
+<div class="sport">
+  <div class="art">
+    <svg viewBox="0 0 96 76" xmlns="http://www.w3.org/2000/svg">
+      <rect x="8" y="52" width="80" height="16" fill="#7fb069"/>
+      <g fill="#f8f3e7"><rect x="30" y="8" width="5" height="34"/><rect x="45" y="8" width="5" height="34"/><rect x="60" y="8" width="5" height="34"/></g>
+      <rect x="26" y="40" width="44" height="5" fill="#8a6d3b"/>
+      <circle cx="76" cy="48" r="9" fill="#9c1a1a"/>
+      <path d="M70 44 C74 48 78 50 82 50" stroke="#f8f3e7" stroke-width="2" fill="none"/>
+      <rect x="12" y="14" width="10" height="40" rx="4" fill="#c8a06a" transform="rotate(18 17 34)"/>
+    </svg>
+  </div>
+  <div>
+    <div class="kick">SPORT &middot; CRICKET</div>
+    <h2>India&ndash;New Zealand Test drawn; Pant hits record 128</h2>
+    <p>The first Test in Wellington ends in a draw after a strong New Zealand
+    fightback. Rishabh Pant&rsquo;s 128 sets a record for an Asian wicketkeeper.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <b>ALSO TODAY:</b> Gukesh begins his world chess title defence against
+  Sindarov in Geneva &middot; Thousands march in Lisbon over living costs
+  &middot; Modi opens an AI centre at IIT Patna.
+</div>
+
+</body>
+</html>
